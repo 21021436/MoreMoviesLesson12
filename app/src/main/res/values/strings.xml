@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">My Movies</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="year">Year of Release</string>
+    <string name="rating">Rating</string>
+    <string name="movie_genre">Genre</string>
+    <string name="movie_id">Movie ID</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_all_movies">Delete All Movies</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="show_list">Show List</string>
+    <string name="clear_all_fields">Clear All Fields</string>
+    <string name="insert">Insert</string>
+    <string name="enter_movie_title_here">Enter movie title here</string>
+    <string name="enter_genre_here">Enter genre here</string>
+    <string name="enter_year_of_release_here">Enter year of release here</string>
+    <string name="show_all_movies_with_this_rating">Show all Movies with this Rating</string>
+    <string-array name="spinnerRatingItems">
+        <item>G</item>
+        <item>PG</item>
+        <item>PG13</item>
+        <item>NC16</item>
+        <item>M18</item>
+        <item>R21</item>
+    </string-array>
+</resources>

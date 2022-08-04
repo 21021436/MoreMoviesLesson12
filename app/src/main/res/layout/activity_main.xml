@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+    android:id="@+id/tvTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/movie_title" />
+
+    <EditText
+    android:id="@+id/etTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="@string/enter_movie_title_here"
+    android:inputType="text" />
+
+    <TextView
+    android:id="@+id/tvGenre"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/movie_genre" />
+
+    <EditText
+    android:id="@+id/etGenre"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:inputType="text"
+    android:hint="@string/enter_genre_here" />
+
+    <TextView
+    android:id="@+id/tvYear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/year" />
+
+    <EditText
+    android:id="@+id/etYear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:inputType="number"
+    android:hint="@string/enter_year_of_release_here" />
+
+    <TextView
+    android:id="@+id/tvRating"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/rating" />
+
+    <Spinner
+        android:id="@+id/spnRating"
+        android:entries="@array/spinnerRatingItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnInsert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="@string/insert"
+            app:backgroundTint="@color/teal_700" />
+
+        <Button
+            android:id="@+id/btnShowList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="@string/show_list"
+            app:backgroundTint="@android:color/holo_red_light" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnClearAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="@string/clear_all_fields"
+        app:backgroundTint="#00DCFF"
+        android:textColor="#000000"/>
+
+</LinearLayout>
